@@ -168,6 +168,7 @@ def process_query():
     )
 
     generated_response = response.choices[0].text.strip()
+    print(generated_response)
 
     return jsonify({'query': query, 'response': generated_response})
 
